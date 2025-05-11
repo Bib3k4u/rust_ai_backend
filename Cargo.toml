@@ -4,10 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+warp = "0.3"  # Don't need explicit CORS feature
 tokio = { version = "1.0", features = ["full"] }
-mongodb = "2.0.0"
+mongodb = { version = "2.5.0", default-features = false, features = ["tokio-sync"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 reqwest = { version = "0.11", features = ["json"] }
-warp = "0.3"
 futures-util = "0.3"
+http = "0.2"

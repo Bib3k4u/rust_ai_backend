@@ -1404,6 +1404,7 @@ name = "rust_mongodb_chatbot"
 version = "0.1.0"
 dependencies = [
  "futures-util",
+ "http 0.2.12",
  "mongodb",
  "reqwest",
  "serde",
